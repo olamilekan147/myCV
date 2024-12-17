@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Online CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        section {
+            margin-top: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .skills,
+        .education,
+        .experience {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>John Doe's Online CV</h1>
+        <img src="profile.jpg" alt="Steve Job,">
+    </header>
+
+    <section>
+        <h2>Short Bio</h2>
+        <p>Hello! I am Steve Job, a passionate software developer with over five years of experience in building web
+            applications. My journey in technology began at a young age when I discovered my love for coding and
+            problem-solving. I thrive on challenges and enjoy creating innovative solutions that enhance user
+            experiences.
+        </p>
+
+        <p>Throughout my career, I have worked with various technologies including JavaScript, Python, and Ruby on
+            Rails. My
+            passion lies in developing scalable applications and exploring new frameworks that can improve efficiency. I
+            am
+            motivated by the impact technology can have on people's lives and strive to contribute positively to the
+            tech
+            community.</p>
+
+        <p>In the future, I aspire to lead projects that focus on sustainability and social good through technology. I
+            believe
+            that with the right tools and mindset, we can create a better world for everyone.</p>
+    </section>
+    <section>
+        <h2>Contact Details</h2>
+        <p><strong>Name:</strong> Steve Job</p>
+        <p><strong>Contact Number:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> SteveJobe@SteveJob.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/SteveJob">linkedin.com/in/SteveJob</a></p>
+    </section>
+
+    <section>
+        <h2>Skills and Competencies</h2>
+        <ul class="skills">
+            <li>JavaScript (React, Node.js)</li>
+            <li>Python (Django, Flask)</li>
+            <li>Ruby on Rails</li>
+            <li>HTML/CSS</li>
+            <li>Database Management (SQL, MongoDB)</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <ul class="education">
+            <li>Bachelor of Science in Computer Science - University of Technology (2015 - 2019)</li>
+            <li>Coding Bootcamp - Tech Academy (2020)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Work Experience</h2>
+        <ul class="experience">
+            <li><strong>Software Developer - Tech Solutions Inc.</strong>, Jan 2020 - Present
+                - Developed web applications using React and Node.js.
+                - Collaborated with cross-functional teams to define project requirements.
+            </li>
+
+            <li><strong>Junior Developer - Web Innovations Ltd.</strong>, Jun 2019 - Dec 2019
+                - Assisted in the development of client websites using Ruby on Rails.
+                - Participated in code reviews and contributed to team meetings.
+            </li>
+        </ul>
+    </section>
+
+    <form action="/search" method="GET">
+        <label for="search">Search CV Content:</label><br />
+        <input type="text" id="search" name="search" placeholder="Enter keywords..."><br /><br />
+        <input type="submit" value="Search">
+
+        <h1>Contact Form</h1>
+        <div class="container">
+
+            <p><label for="fname">Full Name</label><input type="text" id="fname" name="fullname" placeholder=" Your full
+                    name..">
+            </p>
+            <p><label for="Tnumber">Telephone Number</label><input type="text" id="Tnumber" name="Telephone Number"
+                    placeholder="Your contact phone number.."></p>
+            <p><label for="country">Country</label><select id="country" name="country">
+                    <option value="South Africa">South Africa</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select></p>
+            <p>
+                <label for="subject">Subject</label><textarea id="subject" name="subject"
+                    placeholder="Write something.." style="height:200px"></textarea>
+            </p>
+            <p><input type="submit" value="Submit"></p>
+        </div>
+    </form>
+</body>
+</body>
+
+</html>
